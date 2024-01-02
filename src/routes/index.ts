@@ -1,5 +1,8 @@
-const expressR = require("express")
+import { Router } from "express"
+import user from "./userRoutes"
 
-const router = expressR()
+const routes = Router()
 
-module.exports = router
+routes.use(user)
+
+export default routes
